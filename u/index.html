@@ -43,6 +43,12 @@
       padding-bottom: 3rem;
     }
 
+    body.has-body-bg {
+      --card: rgba(255, 255, 255, 0.78);
+      --border: rgba(226, 232, 240, 0.72);
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
     .header {
       background: var(--header-bg, linear-gradient(135deg, var(--accent-soft), #f8f9fa));
       background-size: cover;
@@ -51,6 +57,14 @@
       padding: 2.5rem 1rem 2rem;
       text-align: center;
       border-bottom: 1px solid var(--border);
+    }
+
+    body.has-body-bg .header {
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
     }
 
     .avatar {
@@ -94,6 +108,15 @@
       padding: 1.2rem 1.5rem;
       margin-bottom: 1.2rem;
       box-shadow: var(--shadow);
+    }
+
+    body.has-body-bg .card,
+    body.has-body-bg .nav-bar,
+    body.has-body-bg .playlist.grid-view li,
+    body.has-body-bg .modal-content,
+    body.has-body-bg .modal-song-info {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
 
     .card h2 {
@@ -458,8 +481,23 @@
       gap: 0.8rem;
     }
 
+    body.has-body-bg .playlist.list-view li {
+      background: rgba(255, 255, 255, 0.42);
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      border-radius: 10px;
+      padding: 0.8rem 0.9rem;
+      margin-bottom: 0.6rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
     .playlist.list-view li:last-child {
       border-bottom: none;
+    }
+
+    body.has-body-bg .playlist.list-view li:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+      margin-bottom: 0;
     }
 
     .list-view .song-cover {
@@ -1413,6 +1451,7 @@ ${renderPlaylist(playlist.items, 'grid')}
         };
 
         const applyBg = (url) => {
+          document.body.classList.add('has-body-bg');
           document.documentElement.style.setProperty('--body-bg', `url(${url})`);
           document.documentElement.style.setProperty('--body-bg-size', 'cover');
           document.documentElement.style.setProperty('--body-bg-position', 'center');
