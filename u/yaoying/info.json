@@ -3,7 +3,8 @@
   "tagline": "你们好！这里是窈窈！ 歌势｜杂谈 直播时间:21:00-00:00",
   "bio": false,
   "show_playlist": true,
-  "show_header_bg": true,
+  "show_header_bg": false,
+  "show_body_bg": true,  
   "social": [
     {
       "label": "B站",
