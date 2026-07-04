@@ -1,7 +1,7 @@
 {
   "name": "苍葭Cynthia",
   "tagline": "小鸟向你使用了魔法～ 变得更喜欢小鸟吧！ 🌸",
-  "bio": true,
+  "bio": false,
   "show_playlist": true,
   "show_header_bg": false,
   "show_body_bg": false,

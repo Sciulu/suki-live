@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05",
+  "updated_at": "2026-07-03",
   "vtubers": [
     {
       "id": "riko",
@@ -569,24 +569,44 @@
       "status": "active"
     },
     {
-      "id": "chuly ",
+      "id": "chuly",
       "name": "初Chuly",
       "tagline": "这条锦鲤或许无法实现你的愿望，但她希望你能健康快乐。",
       "registered_at": "2026-04-14",
       "status": "active"
     },
     {
-      "id": "Cynthia",
+      "id": "ruoxing",
+      "name": "若星hoxi",
+      "tagline": "✧英✧日✧二次元专精歌势✧ 请喜欢若星wink~ 请关注若星喵 ✧ 午12点星出现4h活动 ✧ ",
+      "registered_at": "2026-02-24",
+      "status": "active"
+    },
+    {
+      "id": "verna",
+      "name": "薇尓娜Verna_",
+      "tagline": "娜莓门文化有限公司CEO",
+      "status": "active"
+    },
+    {
+      "id": "cynthia",
       "name": "苍葭Cynthia",
       "tagline": "小鸟向你使用了魔法～变得更喜欢小鸟吧！",
       "registered_at": "2026-07-04",
       "status": "active"
-    }
+    },
     {
       "id": "example",
       "name": "Example",
       "tagline": "用歌声传递温柔的虚拟歌姬 🌸",
       "registered_at": "2026-01-01",
+      "status": "active"
+    },
+    {
+      "id": "lubao",
+      "name": "鹿鹿宝宝Lulu",
+      "tagline": "通宵治愈陪伴系歌势 22:00-4:00 白天随机掉落",
+      "registered_at": "2026-07-03",
       "status": "active"
     }
   ]

@@ -1,9 +1,12 @@
 {
   "name": "薇尓娜Verna_",
   "tagline": "娜莓门文化有限公司CEO",
-  "bio": true,
+  "bio": false,
   "show_playlist": true,
   "social": [
-    { "label": "B 站", "url": "https://space.bilibili.com/3706927714404361" },
+    {
+      "label": "B 站",
+      "url": "https://space.bilibili.com/3706927714404361"
+    }
   ]
 }
