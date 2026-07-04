@@ -1,0 +1,16 @@
+{
+  "name": "鹿鹿宝宝Lulu",
+  "tagline": "通宵治愈陪伴系歌势 22:00-4:00 白天随机掉落",
+  "bio": false,
+  "show_playlist": true,
+  "show_header_bg": false,
+  "show_body_bg": false,
+  "social": [
+    {
+      "label": "B站",
+      "url": "https://space.bilibili.com/3546588926445637"
+    }
+  ],
+  "created_at": "2026-07-03",
+  "updated_at": "2026-07-03"
+}
