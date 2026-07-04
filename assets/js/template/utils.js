@@ -108,10 +108,15 @@
     return host.split(".")[0];
   }
 
+  function getApexOrigin() {
+    return "https://suki.live";
+  }
+
   template.utils = {
     escapeHtml,
     sanitizeRenderedHtml,
     getPrimaryAccess,
+    getApexOrigin,
     getVtuberId,
   };
 })();

@@ -62,6 +62,17 @@
     document.getElementById("name").textContent = info.name;
     document.getElementById("tagline").textContent = info.tagline || "";
 
+    const avatarEl = document.getElementById("avatar");
+    if (avatarEl) {
+      avatarEl.src = `${state.base}/avatar.png?t=${Date.now()}`;
+      avatarEl.style.display = "";
+    }
+
+    const faviconEl = document.querySelector('link[rel="icon"]');
+    if (faviconEl) {
+      faviconEl.href = `${state.base}/favicon.ico?t=${Date.now()}`;
+    }
+
     const socialEl = document.getElementById("social");
     socialEl.innerHTML = "";
     if (Array.isArray(info.social) && info.social.length) {

@@ -1,7 +1,7 @@
 (function () {
   const template = (window.SukiTemplate = window.SukiTemplate || {});
 
-  function setupHeaderBackground(info) {
+  function setupHeaderBackground(state, info) {
     if (info.show_header_bg !== true) return;
 
     const applyHeaderBg = (url) => {
@@ -20,8 +20,8 @@
 
     const loadHeaderBg = () => {
       const isMobile = window.innerWidth <= 640;
-      const mobileUrl = `/head_bg_mobile.png?t=${Date.now()}`;
-      const desktopUrl = `/head_bg.png?t=${Date.now()}`;
+      const mobileUrl = `${state.base}/head_bg_mobile.png?t=${Date.now()}`;
+      const desktopUrl = `${state.base}/head_bg.png?t=${Date.now()}`;
 
       if (isMobile) {
         checkImage(mobileUrl)
@@ -45,12 +45,12 @@
     });
   }
 
-  function setupBodyBackground(info) {
+  function setupBodyBackground(state, info) {
     if (info.show_body_bg !== true) return;
 
     const getBgUrl = (isMobile) => {
-      const mobileUrl = `/body_bg_mobile.png?t=${Date.now()}`;
-      const desktopUrl = `/body_bg.png?t=${Date.now()}`;
+      const mobileUrl = `${state.base}/body_bg_mobile.png?t=${Date.now()}`;
+      const desktopUrl = `${state.base}/body_bg.png?t=${Date.now()}`;
       return isMobile ? mobileUrl : desktopUrl;
     };
 
@@ -63,7 +63,7 @@
 
     const checkAndApply = (isMobile) => {
       const preferredUrl = getBgUrl(isMobile);
-      const fallbackUrl = `/body_bg.png?t=${Date.now()}`;
+      const fallbackUrl = `${state.base}/body_bg.png?t=${Date.now()}`;
 
       fetch(preferredUrl, { method: "HEAD" })
         .then((response) => {
