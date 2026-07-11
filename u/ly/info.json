@@ -1,0 +1,16 @@
+{
+  "name": "六月なつ",
+  "tagline": "请耐心等待...这也是修行的一环！",
+  "bio": false,
+  "show_playlist": true,
+  "show_header_bg": false,
+  "show_body_bg": false,
+  "social": [
+    {
+      "label": "B站",
+      "url": "https://space.bilibili.com/3210174"
+    }
+  ],
+  "created_at": "2026-07-12",
+  "updated_at": "2026-07-12"
+}
