@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03",
+  "updated_at": "2026-07-08",
   "vtubers": [
     {
       "id": "riko",
@@ -593,6 +593,13 @@
       "name": "苍葭Cynthia",
       "tagline": "小鸟向你使用了魔法～变得更喜欢小鸟吧！",
       "registered_at": "2026-07-04",
+      "status": "active"
+    },
+    {
+      "id": "aein",
+      "name": "梨涡酱酱Aein",
+      "tagline": "迷途小黑猫，静待主人！~",
+      "registered_at": "2026-07-07",
       "status": "active"
     },
     {
